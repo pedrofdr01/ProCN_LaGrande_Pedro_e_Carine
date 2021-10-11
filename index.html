@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Projeto CN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-light bg-secondary">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">
+                <img src="./assets/img/favicon.png" alt="Projeto CN" width="25"
+                    class="bg-white d-inline-block border rounded-circle border-white align-text-top me-2">
+                Projeto CN
+            </a>
+        </div>
+    </nav>
+    <div class="container-fluid mb-5" id="container">
+        <div class="card border-secondary">
+            <div class="card-header bg-secondary text-white">
+                Input
+            </div>
+            <div class="card-body">
+                <div class="alert alert-info">
+                    <b>Atenção! </b>
+                    <p class="mb-0">- Para o cálculo funcionar, utilize "." como separador decimal e não utilize nenhum caractere para
+                    fazer a separação milenar (e.g.: 2500.40). </p>
+                    <p class="mb-0">- Não utilize espaço entre os caracteres (e.g.: - 2 estará incorreto, enquanto -2 estará correto).</p>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-12">
+                        <label for="ponto">Ponto</label>
+                        <input type="text" class="form-control" id="ponto">
+                    </div>
+                </div> -->
+                <div class="row mt-4 mb-2">
+                    <div class="col-12">
+                        <b>Valores de X</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="x1">X1</label>
+                        <input type="text" class="form-control" id="x1">
+                    </div>
+                    <div class="col-4">
+                        <label for="x2">X2</label>
+                        <input type="text" class="form-control" id="x2">
+                    </div>
+                    <div class="col-4">
+                        <label for="x3">X3</label>
+                        <input type="text" class="form-control" id="x3">
+                    </div>
+                </div>
+                <div class="row mt-4 mb-2">
+                    <div class="col-12">
+                        <b>Valores de F(X)</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="y1">Y1</label>
+                        <input type="text" class="form-control" id="y1">
+                    </div>
+                    <div class="col-4">
+                        <label for="y2">Y2</label>
+                        <input type="text" class="form-control" id="y2">
+                    </div>
+                    <div class="col-4">
+                        <label for="y3">Y3</label>
+                        <input type="text" class="form-control" id="y3">
+                    </div>
+                </div>
+                <div class="row g-2 mt-2">
+                    <div class="col-12">
+                        <button onclick="calc()" class="btn btn-secondary w-100">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card border-secondary mt-2">
+            <div class="card-header bg-secondary text-white">
+                Output
+            </div>
+            <div class="card-body">
+                <div class="row" id="result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
