@@ -28,9 +28,13 @@
             <div class="card-body">
                 <div class="alert alert-info">
                     <b>Atenção! </b>
-                    <p class="mb-0">- Para o cálculo funcionar, utilize "." como separador decimal e não utilize nenhum caractere para
-                    fazer a separação milenar (e.g.: 2500.40). </p>
-                    <p class="mb-0">- Não utilize espaço entre os caracteres (e.g.: - 2 estará incorreto, enquanto -2 estará correto).</p>
+                    <p class="mb-0">- Para o cálculo funcionar, utilize "." como separador decimal e não utilize nenhum
+                        caractere para
+                        fazer a separação milenar (e.g.: 2500.40). </p>
+                    <p class="mb-0">- Não utilize espaço entre os caracteres (e.g.: - 2 estará incorreto, enquanto -2
+                        estará correto).</p>
+                    <p class="mb-0">- Informe o número de pontos, caso contrário o cálculo apresentará erros.</p>
+                    <p class="mb-0">- Pelo menos dois pontos devem ser informados.</p>
                 </div>
                 <div class="row mt-4 mb-2">
                     <div class="col-12">
@@ -38,17 +42,25 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col">
                         <label for="x0">X0</label>
                         <input type="text" class="form-control" id="x0">
                     </div>
-                    <div class="col-4">
+                    <div class="col">
                         <label for="x1">X1</label>
                         <input type="text" class="form-control" id="x1">
                     </div>
-                    <div class="col-4">
+                    <div class="col">
                         <label for="x2">X2</label>
                         <input type="text" class="form-control" id="x2">
+                    </div>
+                    <div class="col">
+                        <label for="x3">X3</label>
+                        <input type="text" class="form-control" id="x3">
+                    </div>
+                    <div class="col">
+                        <label for="x4">X4</label>
+                        <input type="text" class="form-control" id="x4">
                     </div>
                 </div>
                 <div class="row mt-4 mb-2">
@@ -57,17 +69,40 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col">
                         <label for="y0">Y0</label>
                         <input type="text" class="form-control" id="y0">
                     </div>
-                    <div class="col-4">
+                    <div class="col">
                         <label for="y1">Y1</label>
                         <input type="text" class="form-control" id="y1">
                     </div>
-                    <div class="col-4">
+                    <div class="col">
                         <label for="y2">Y2</label>
                         <input type="text" class="form-control" id="y2">
+                    </div>
+                    <div class="col">
+                        <label for="y3">Y3</label>
+                        <input type="text" class="form-control" id="y3">
+                    </div>
+                    <div class="col">
+                        <label for="y4">Y4</label>
+                        <input type="text" class="form-control" id="y4">
+                    </div>
+                </div>
+                <div class="row mt-4 mb-2">
+                    <div class="col-12">
+                        <b>Ponto X | Quantidade de Pontos</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="x">X</label>
+                        <input type="text" class="form-control" id="x">
+                    </div>
+                    <div class="col">
+                        <label for="p">Nº Pontos</label>
+                        <input type="text" class="form-control" value="5" id="p">
                     </div>
                 </div>
                 <div class="row g-2 mt-2">
